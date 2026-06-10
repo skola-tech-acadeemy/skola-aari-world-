@@ -61,6 +61,7 @@ export default function Testimonials() {
           itemDistance={50} 
           itemStackDistance={30} 
           useWindowScroll={true}
+          onStackComplete={() => {}}
         >
           {testimonials.map((testimonial) => (
             <ScrollStackItem key={testimonial.id} itemClassName="group/card">

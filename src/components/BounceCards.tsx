@@ -4,6 +4,18 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './BounceCards.css';
 
+interface BounceCardsProps {
+  className?: string;
+  images?: string[];
+  containerWidth?: number | string;
+  containerHeight?: number | string;
+  animationDelay?: number;
+  animationStagger?: number;
+  easeType?: string;
+  transformStyles?: string[];
+  enableHover?: boolean;
+}
+
 export default function BounceCards({
   className = '',
   images = [],
@@ -20,7 +32,7 @@ export default function BounceCards({
     'rotate(2deg) translate(170px)'
   ],
   enableHover = true
-}) {
+}: BounceCardsProps) {
   const containerRef = useRef(null);
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -38,7 +50,7 @@ export default function BounceCards({
     return () => ctx.revert();
   }, [animationStagger, easeType, animationDelay]);
 
-  const getNoRotationTransform = transformStr => {
+  const getNoRotationTransform = (transformStr: string) => {
     const hasRotate = /rotate\([\s\S]*?\)/.test(transformStr);
     if (hasRotate) {
       return transformStr.replace(/rotate\([\s\S]*?\)/, 'rotate(0deg)');
@@ -49,7 +61,7 @@ export default function BounceCards({
     }
   };
 
-  const getPushedTransform = (baseTransform, offsetX) => {
+  const getPushedTransform = (baseTransform: string, offsetX: number) => {
     const translateRegex = /translate\(([-0-9.]+)px\)/;
     const match = baseTransform.match(translateRegex);
     if (match) {
@@ -61,7 +73,7 @@ export default function BounceCards({
     }
   };
 
-  const pushSiblings = hoveredIdx => {
+  const pushSiblings = (hoveredIdx: number) => {
     if (!enableHover || !containerRef.current) return;
 
     const q = gsap.utils.selector(containerRef);

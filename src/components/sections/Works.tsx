@@ -58,6 +58,7 @@ export default function Works() {
             borderRadius={0.05}
             scrollEase={0.02}
             font="bold 30px 'Outfit', sans-serif"
+            fontUrl=""
           />
         </div>
 
