@@ -31,10 +31,10 @@ export default function Lanyard({
   gravity = [0, -40, 0],
   fov = 20,
   transparent = true,
-  frontImage = null,
-  backImage = null,
+  frontImage = "",
+  backImage = "",
   imageFit = 'cover',
-  lanyardImage = null,
+  lanyardImage = "",
   lanyardWidth = 1
 }) {
   const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.innerWidth < 768);
@@ -102,10 +102,10 @@ function Band({
   maxSpeed = 50,
   minSpeed = 0,
   isMobile = false,
-  frontImage = null,
-  backImage = null,
+  frontImage = "",
+  backImage = "",
   imageFit = 'cover',
-  lanyardImage = null,
+  lanyardImage = "",
   lanyardWidth = 1
 }) {
   const band = useRef(),
