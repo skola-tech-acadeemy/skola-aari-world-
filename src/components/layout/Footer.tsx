@@ -11,6 +11,7 @@ export default function Footer() {
     <footer className="relative bg-[#03061A] border-t border-white/5 pt-20 pb-10 mt-20 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-40">
         <GradientBlinds
+          dpr={1}
           gradientColors={['#03061A', '#FF1493', '#d4af37', '#03061A']}
           angle={45}
           noise={0.3}
