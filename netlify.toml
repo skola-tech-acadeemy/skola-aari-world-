@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# The Next.js plugin is automatically installed by Netlify, 
+# but declaring it ensures the correct caching and routing rules are applied.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
