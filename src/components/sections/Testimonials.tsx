@@ -75,7 +75,7 @@ export default function Testimonials() {
                   </div>
                   
                   <p className="text-white/70 group-[.is-active]/card:text-gray-800 leading-relaxed mb-8 relative z-10 font-light text-2xl md:text-3xl transition-colors duration-700">
-                    "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                   </p>
                 </div>
                 

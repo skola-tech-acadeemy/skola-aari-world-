@@ -92,7 +92,7 @@ export default function About() {
             </h2>
 
             <p className="text-white/60 text-lg leading-relaxed font-light">
-              Founded on a passion for intricate artistry, Skola Aari World is India's premier luxury Aari embroidery academy and boutique. We don't just teach stitches; we cultivate master artisans.
+              Founded on a passion for intricate artistry, Skola Aari World is India&apos;s premier luxury Aari embroidery academy and boutique. We don&apos;t just teach stitches; we cultivate master artisans.
             </p>
             <p className="text-white/60 text-lg leading-relaxed font-light">
               Whether designing breathtaking bridal trousseaus or empowering women to start their own luxury boutiques, our mission is to elevate the ancient art of Aari to modern haute couture standards.

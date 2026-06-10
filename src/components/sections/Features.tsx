@@ -47,7 +47,7 @@ const itemVariants = {
   },
 };
 
-function FeatureCard({ feature }: { feature: any }) {
+function FeatureCard({ feature }: { feature: { icon: React.ReactNode; title: string; description: string } }) {
   const ref = useRef<HTMLDivElement>(null);
   
   const x = useMotionValue(0);

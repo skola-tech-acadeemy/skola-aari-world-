@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 function CounterItem({ end, label, suffix = "" }: { end: number, label: string, suffix?: string }) {

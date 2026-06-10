@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import Image from "next/image";
 import GridDistortion from "@/components/GridDistortion";

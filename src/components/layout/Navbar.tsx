@@ -2,9 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Menu, X, Search, ShoppingBag } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import Lanyard from "@/components/Lanyard";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 

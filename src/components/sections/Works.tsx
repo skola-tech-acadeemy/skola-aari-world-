@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { motion } from "framer-motion";
 import CircularGallery from "@/components/CircularGallery";

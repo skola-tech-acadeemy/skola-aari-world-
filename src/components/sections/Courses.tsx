@@ -1,9 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Clock, BookOpen, Sparkles } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
+import { Clock, BookOpen, Sparkles } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const courses = [

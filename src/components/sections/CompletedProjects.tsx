@@ -58,7 +58,7 @@ export default function CompletedProjects() {
             transition={{ delay: 0.2 }}
             className="text-white/60 max-w-2xl mx-auto"
           >
-            A glimpse into the stunning work we've already delivered. Hover over the cards to explore our craftsmanship.
+            A glimpse into the stunning work we&apos;ve already delivered. Hover over the cards to explore our craftsmanship.
           </motion.p>
         </div>
 

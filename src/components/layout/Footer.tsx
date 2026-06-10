@@ -50,7 +50,7 @@ export default function Footer() {
               Experience the pinnacle of luxury bridal fashion and traditional Aari embroidery. We craft dreams into reality with every stitch.
             </p>
             <div className="relative p-5 rounded-xl bg-white/5 border border-brand-gold/20 mb-8 italic text-brand-gold/90 text-sm font-serif shadow-[0_0_15px_rgba(212,175,55,0.05)]">
-              "Elegance is the only beauty that never fades. Every stitch is a step towards timeless perfection." <br/>
+              &quot;Elegance is the only beauty that never fades. Every stitch is a step towards timeless perfection.&quot; <br/>
               <span className="text-white/50 text-xs mt-2 block not-italic font-sans tracking-widest uppercase">— Skola Aari World</span>
             </div>
             <div className="flex gap-4">
